@@ -1,0 +1,257 @@
+body {
+  background:red;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.item img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #0b0f2a; /* dark space theme */
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px #00c3ff;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #00c3ff;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0099cc;
+}
+
+/* Header */
+header {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.about {
+  padding: 30px;
+  line-height: 1.8;
+}
+
+/* Headings */
+.about h2, .about h3 {
+  margin-top: 20px;
+  color: #00b4db;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #00b4db;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #00b4db;
+  color: white;
+}
+
+/* Link styling */
+a {
+  color: #00b4db;
+}
+
+a:hover {
+  color: yellow;
+}
+
+
+
+
+
+/* Navigation */
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+nav a:active {
+  color: red;
+}
+
+nav a:visited {
+  color: lightgray;
+}
+
+/* Hero Section */
+ 
+.hero {
+  height: 400px;
+  background-image: url('../images/rocket.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+
+  /* ADD THIS 👇 */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border: 2px solid #00b4db;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: #00b4db;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button::after {
+  content: " 🌌";
+}
+
+button:hover {
+  background: #0083b0;
+}
+
+button::after {
+  content: " 🚀";
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
